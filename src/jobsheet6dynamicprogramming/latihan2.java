@@ -18,6 +18,23 @@ public class latihan2 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Masukkan berat angkutan: ");
         int uang = scanner.nextInt();
+        int berat[] = {7, 5, 4, 3, 2};
+        int bayaran[] = {10000, 7000, 5000, 3000, 2000};
+        String jenis[] = {"E", "D", "C", "B", "A"};
         int jumlah;
+        int banyak;
+        int harga;
+        
+        for(int i = 0; i < berat.length; i++){
+            if(uang >= berat[i]){
+                jumlah = uang/berat[i];
+                banyak = jumlah*berat[i];
+                uang = uang%berat[i];
+                harga = jumlah*bayaran[i];
+                System.out.println("Jenis Barang: " +jenis[i]);
+                System.out.println("Jumlah Barang: " +jumlah);
+                System.out.println("Total Bayaran: " +harga);
+            }
+        }
     }
 }
