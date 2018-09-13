@@ -12,6 +12,7 @@ package jobsheet6dynamicprogramming;
 public class latihan1 {
     public static void main (String[] args){
         String identitas = "Luthfarras / XR5 / 19";
+        System.out.println("Identitas: " + identitas);
         int uang = 421300;
         int pecahan[] = new int[]{5000, 2000, 1000, 500};
         int jumlah;
