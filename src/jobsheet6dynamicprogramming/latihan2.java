@@ -13,5 +13,6 @@ public class latihan2 {
     public static void main (String[] args){
         String identitas = "Luthfarras / XR5 / 19";
         System.out.println("Identitas: " + identitas);
+        int jumlah;
     }
 }
